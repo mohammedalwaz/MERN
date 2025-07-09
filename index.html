@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Photo Gallery</title></head>
+<body>
+<h1>My Photo Gallery</h1>
+<a href="/upload">Upload New Photo</a>
+<hr>
+{% for id, name in photos %}
+    <div>
+        <img src="/photo/{{ id }}" width="200">
+        <p>{{ name }}</p>
+    </div>
+{% endfor %}
+</body>
+</html>
